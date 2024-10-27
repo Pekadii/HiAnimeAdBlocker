@@ -1,8 +1,5 @@
 // background.js
 
-// List of domains that are considered allowed (e.g., hianime.to)
-const allowedDomains = ["hianime.to", "www.hianime.to"];
-
 // Function to close a tab based on its ID
 function closeTab(tabId) {
     if (tabId) {
@@ -10,7 +7,7 @@ function closeTab(tabId) {
             if (chrome.runtime.lastError) {
                 console.error("Error closing tab:", chrome.runtime.lastError);
             } else {
-                console.log(`Tab closed.`);
+                console.log(`Tab with ID ${tabId} has been closed.`);
             }
         });
     }
@@ -18,60 +15,58 @@ function closeTab(tabId) {
 
 // Function to check if a domain matches hianime.to
 function isHianimeDomain(domain) {
-    return allowedDomains.includes(domain);
+    return domain === "hianime.to" || domain === "www.hianime.to";
 }
 
-// Monitor new tabs only when they are opened by hianime.to
-function monitorTabs() {
-    chrome.tabs.onCreated.addListener((newTab) => {
-        // Check if the new tab was opened by another tab (openerTabId must exist)
-        if (newTab.openerTabId) {
-            chrome.tabs.get(newTab.openerTabId, (openerTab) => {
-                if (openerTab) {
-                    const openerDomain = new URL(openerTab.url).hostname;
+// Listen for tab updates to check if the user visits hianime.to or its subpages
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+    if (changeInfo.status === 'complete' && tab.url) {
+        const domain = new URL(tab.url).hostname;
 
-                    // Only close the new tab if it was opened by hianime.to
-                    if (isHianimeDomain(openerDomain)) {
-                        console.log(`New tab opened by hianime.to detected: ${newTab.url}. Closing it.`);
-                        closeTab(newTab.id);
-                    }
-                }
-            });
-        }
-    });
+        // If the user visits hianime.to, we begin monitoring for new tabs
+        if (isHianimeDomain(domain)) {
+            console.log(`User visited ${tab.url}. Monitoring for any new tabs and redirects.`);
 
-    chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-        if (changeInfo.status === 'complete' && tab.url) {
-            const domain = new URL(tab.url).hostname;
+            // Monitor for new tabs created by hianime.to
+            chrome.tabs.onCreated.addListener((newTab) => {
+                chrome.tabs.get(newTab.openerTabId, (openerTab) => {
+                    if (openerTab) {
+                        const openerDomain = new URL(openerTab.url).hostname;
 
-            // Only close the tab if it is opened by hianime.to and redirects to a different domain
-            chrome.tabs.get(tabId, (updatedTab) => {
-                if (updatedTab.openerTabId) {
-                    chrome.tabs.get(updatedTab.openerTabId, (openerTab) => {
-                        if (openerTab) {
-                            const openerDomain = new URL(openerTab.url).hostname;
-
-                            // Check if the tab was opened by hianime.to but is not loading a hianime domain
-                            if (isHianimeDomain(openerDomain) && !isHianimeDomain(domain)) {
-                                console.log(`Redirected tab from hianime.to detected with domain ${domain}. Closing tab.`);
-                                closeTab(tabId);
-                            }
+                        // Only close the new tab if it was opened by hianime.to
+                        if (isHianimeDomain(openerDomain)) {
+                            console.log(`New tab opened by hianime.to detected: ${newTab.url}. Closing it.`);
+                            closeTab(newTab.id);
                         }
-                    });
-                }
+                    }
+                });
             });
+
+            // Listen for web requests and block any that match unwanted domains
+            chrome.webRequest.onBeforeRequest.addListener(
+                function(details) {
+                    const blockedDomains = [
+                        "lps.plarium.com", // Add other domains if necessary
+                        "moneyzenith.com",
+                        "discoveryfeed.org",
+                        "narakathegame.com",
+                        "coupons.flightshotelsbook.com",
+                        "motherlyvisions.com",
+                        "discoverhealth.today",
+                        "cookingfanatic.com",
+                    ];
+
+                    const requestDomain = new URL(details.url).hostname;
+
+                    // If the domain is in the blocked list, close the tab where the request occurred
+                    if (blockedDomains.includes(requestDomain)) {
+                        console.log(`Blocked request detected from ${requestDomain}. Closing tab.`);
+                        closeTab(details.tabId);
+                    }
+                },
+                { urls: ["<all_urls>"] },
+                ["blocking"]
+            );
         }
-    });
-}
-
-// Event listener for service worker activation
-chrome.runtime.onInstalled.addListener(() => {
-    console.log("Service worker activated and blocking rules applied.");
-    monitorTabs();
-});
-
-// Ensures the service worker wakes up when the browser starts
-chrome.runtime.onStartup.addListener(() => {
-    console.log("Service worker restarted on browser startup.");
-    monitorTabs();
+    }
 });
