@@ -1,72 +1,86 @@
 // background.js
 
-// Function to close a tab based on its ID
+// Allowed domains list (including hianime.to, discord.com, aniwatchtv.to, and github.com)
+const allowedDomains = [
+    "hianime.to", "www.hianime.to",
+    "discord.com", "www.discord.com",
+    "aniwatchtv.to", "www.aniwatchtv.to",
+    "github.com", "www.github.com"
+];
+
+// Set to store manually opened tab IDs
+let manuallyOpenedTabs = new Set();
+let initialLoadTabs = new Set();
+
+// Function to close a tab based on its ID, with additional error handling
 function closeTab(tabId) {
     if (tabId) {
-        chrome.tabs.remove(tabId, () => {
-            if (chrome.runtime.lastError) {
-                console.error("Error closing tab:", chrome.runtime.lastError);
+        chrome.tabs.get(tabId, (tab) => {
+            if (chrome.runtime.lastError || !tab) {
+                console.error(`Tab with ID ${tabId} does not exist or is already closed.`);
             } else {
-                console.log(`Tab with ID ${tabId} has been closed.`);
+                chrome.tabs.remove(tabId, () => {
+                    if (chrome.runtime.lastError) {
+                        console.error(`Error closing tab: ${chrome.runtime.lastError.message}`);
+                    } else {
+                        console.log(`Tab with ID ${tabId} has been closed.`);
+                    }
+                });
             }
         });
     }
 }
 
-// Function to check if a domain matches hianime.to
-function isHianimeDomain(domain) {
-    return domain === "hianime.to" || domain === "www.hianime.to";
+// Function to check if a domain matches any in the allowedDomains list
+function isAllowedDomain(domain) {
+    return allowedDomains.includes(domain);
 }
 
-// Listen for tab updates to check if the user visits hianime.to or its subpages
+// Monitor for newly created tabs
+chrome.tabs.onCreated.addListener((newTab) => {
+    // If the tab does not have an opener or has a new tab URL, mark it as user-initiated
+    if (!newTab.openerTabId || newTab.pendingUrl === "opera://startpage/" || newTab.pendingUrl === "chrome://newtab/") {
+        manuallyOpenedTabs.add(newTab.id);
+        console.log(`Manually opened tab detected: ${newTab.id}`);
+    }
+});
+
+// Monitor tab updates to detect redirects and block unauthorized tabs
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-    if (changeInfo.status === 'complete' && tab.url) {
-        const domain = new URL(tab.url).hostname;
+    if (changeInfo.status === 'loading' && tab.url) {
+        try {
+            const tabDomain = new URL(tab.url).hostname;
 
-        // If the user visits hianime.to, we begin monitoring for new tabs
-        if (isHianimeDomain(domain)) {
-            console.log(`User visited ${tab.url}. Monitoring for any new tabs and redirects.`);
+            // Allow tabs that are manually opened or belong to allowed domains
+            if (isAllowedDomain(tabDomain) || manuallyOpenedTabs.has(tabId) || initialLoadTabs.has(tabId)) {
+                console.log(`Allowed domain or manual tab detected: ${tab.url}`);
+                return;
+            }
 
-            // Monitor for new tabs created by hianime.to
-            chrome.tabs.onCreated.addListener((newTab) => {
-                chrome.tabs.get(newTab.openerTabId, (openerTab) => {
-                    if (openerTab) {
-                        const openerDomain = new URL(openerTab.url).hostname;
+            // Otherwise, close the tab
+            console.log(`Redirect detected to unallowed domain: ${tab.url}. Closing tab.`);
+            closeTab(tabId);
 
-                        // Only close the new tab if it was opened by hianime.to
-                        if (isHianimeDomain(openerDomain)) {
-                            console.log(`New tab opened by hianime.to detected: ${newTab.url}. Closing it.`);
-                            closeTab(newTab.id);
-                        }
-                    }
-                });
-            });
-
-            // Listen for web requests and block any that match unwanted domains
-            chrome.webRequest.onBeforeRequest.addListener(
-                function(details) {
-                    const blockedDomains = [
-                        "lps.plarium.com", // Add other domains if necessary
-                        "moneyzenith.com",
-                        "discoveryfeed.org",
-                        "narakathegame.com",
-                        "coupons.flightshotelsbook.com",
-                        "motherlyvisions.com",
-                        "discoverhealth.today",
-                        "cookingfanatic.com",
-                    ];
-
-                    const requestDomain = new URL(details.url).hostname;
-
-                    // If the domain is in the blocked list, close the tab where the request occurred
-                    if (blockedDomains.includes(requestDomain)) {
-                        console.log(`Blocked request detected from ${requestDomain}. Closing tab.`);
-                        closeTab(details.tabId);
-                    }
-                },
-                { urls: ["<all_urls>"] },
-                ["blocking"]
-            );
+        } catch (e) {
+            console.error("Error processing tab URL:", e);
         }
     }
+});
+
+// Remove tab from manually opened set when it is closed
+chrome.tabs.onRemoved.addListener((tabId) => {
+    manuallyOpenedTabs.delete(tabId);
+    initialLoadTabs.delete(tabId);
+    console.log(`Tab with ID ${tabId} was removed manually.`);
+});
+
+// When the extension is first loaded, check already open tabs and exclude them
+chrome.tabs.query({}, (tabs) => {
+    tabs.forEach((tab) => {
+        const domain = new URL(tab.url).hostname;
+        if (isAllowedDomain(domain) || tab.url === "chrome://newtab/" || tab.url === "opera://startpage/") {
+            initialLoadTabs.add(tab.id);
+            console.log(`Excluding already open tab: ${tab.id}`);
+        }
+    });
 });
