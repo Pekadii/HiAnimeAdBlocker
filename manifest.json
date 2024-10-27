@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "HiAnime Ad Blocker",
   "version": "1.6.9",
-  "description": "Ad blocker extension with specific domain exclusions.",
+  "description": "Ad blocker auto closes redirect link pop-ups. by Pekadi",
   "permissions": [
     "declarativeNetRequest",
     "tabs",
