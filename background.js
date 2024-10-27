@@ -1,8 +1,9 @@
 // background.js
 
-// Allowed domains list (including hianime.to, discord.com, aniwatchtv.to, github.com, and animepahe.ru)
+// Allowed domains list (modify this list to add or remove allowed domains)
 const allowedDomains = [
     "hianime.to", "www.hianime.to",
+    // Add additional allowed domains below in the format: "example.com", "www.example.com"
 ];
 
 // Set to store manually opened tab IDs
@@ -75,10 +76,14 @@ chrome.tabs.onRemoved.addListener((tabId) => {
 // When the extension is first loaded, check already open tabs and exclude them
 chrome.tabs.query({}, (tabs) => {
     tabs.forEach((tab) => {
-        const domain = new URL(tab.url).hostname;
-        if (isAllowedDomain(domain) || tab.url === "chrome://newtab/" || tab.url === "opera://startpage/" || tab.url.startsWith("chrome://") || tab.url.startsWith("opera://")) {
-            initialLoadTabs.add(tab.id);
-            console.log(`Excluding already open tab: ${tab.id}`);
+        try {
+            const domain = new URL(tab.url).hostname;
+            if (isAllowedDomain(domain) || tab.url === "chrome://newtab/" || tab.url === "opera://startpage/" || tab.url.startsWith("chrome://") || tab.url.startsWith("opera://")) {
+                initialLoadTabs.add(tab.id);
+                console.log(`Excluding already open tab: ${tab.id}`);
+            }
+        } catch (e) {
+            console.error("Error processing existing tab URL:", e);
         }
     });
 });
