@@ -1,11 +1,12 @@
 // background.js
 
-// Allowed domains list (including hianime.to, discord.com, aniwatchtv.to, and github.com)
+// Allowed domains list (including hianime.to, discord.com, aniwatchtv.to, github.com, and animepahe.ru)
 const allowedDomains = [
     "hianime.to", "www.hianime.to",
     "discord.com", "www.discord.com",
     "aniwatchtv.to", "www.aniwatchtv.to",
-    "github.com", "www.github.com"
+    "github.com", "www.github.com",
+    "animepahe.ru", "www.animepahe.ru"
 ];
 
 // Set to store manually opened tab IDs
