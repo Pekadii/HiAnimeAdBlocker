@@ -10,3 +10,6 @@ working properly as I wanted to.
 Everyone can agree it's annyoing. As I keep updating the background.js
 to auto close random redirects links it doesn't distract me as much as it used to without
 a Ad blocker so I created one specifically for ( HiAnime ).
+
+
+![Thumbnail Image](Thumbnail.png)
