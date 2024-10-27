@@ -14,21 +14,22 @@ let initialLoadTabs = new Set();
 
 // Function to close a tab based on its ID, with additional error handling
 function closeTab(tabId) {
-    if (tabId) {
-        chrome.tabs.get(tabId, (tab) => {
-            if (chrome.runtime.lastError || !tab) {
-                console.error(`Tab with ID ${tabId} does not exist or is already closed.`);
-            } else {
-                chrome.tabs.remove(tabId, () => {
-                    if (chrome.runtime.lastError) {
-                        console.error(`Error closing tab: ${chrome.runtime.lastError.message}`);
-                    } else {
-                        console.log(`Tab with ID ${tabId} has been closed.`);
-                    }
-                });
-            }
-        });
-    }
+    chrome.tabs.get(tabId, (tab) => {
+        // Check if the tab exists and is active before attempting to close
+        if (chrome.runtime.lastError) {
+            console.error(`Error: ${chrome.runtime.lastError.message}`);
+        } else if (tab) {
+            chrome.tabs.remove(tabId, () => {
+                if (chrome.runtime.lastError) {
+                    console.error(`Error closing tab: ${chrome.runtime.lastError.message}`);
+                } else {
+                    console.log(`Tab with ID ${tabId} has been closed.`);
+                }
+            });
+        } else {
+            console.log(`Tab with ID ${tabId} does not exist or is already closed.`);
+        }
+    });
 }
 
 // Function to check if a domain matches any in the allowedDomains list
@@ -38,7 +39,7 @@ function isAllowedDomain(domain) {
 
 // Monitor for newly created tabs
 chrome.tabs.onCreated.addListener((newTab) => {
-    // If the tab does not have an opener or has a new tab URL, mark it as user-initiated
+    // Tabs without an opener or with a new tab URL are manually opened
     if (!newTab.openerTabId || newTab.pendingUrl === "opera://startpage/" || newTab.pendingUrl === "chrome://newtab/") {
         manuallyOpenedTabs.add(newTab.id);
         console.log(`Manually opened tab detected: ${newTab.id}`);
@@ -51,9 +52,9 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
         try {
             const tabDomain = new URL(tab.url).hostname;
 
-            // Allow tabs that are manually opened or belong to allowed domains
-            if (isAllowedDomain(tabDomain) || manuallyOpenedTabs.has(tabId) || initialLoadTabs.has(tabId)) {
-                console.log(`Allowed domain or manual tab detected: ${tab.url}`);
+            // Exclude internal browser pages and allowed domains
+            if (tab.url.startsWith("opera://") || tab.url.startsWith("chrome://") || isAllowedDomain(tabDomain) || manuallyOpenedTabs.has(tabId) || initialLoadTabs.has(tabId)) {
+                console.log(`Allowed domain, manual tab, or internal page detected: ${tab.url}`);
                 return;
             }
 
@@ -78,7 +79,7 @@ chrome.tabs.onRemoved.addListener((tabId) => {
 chrome.tabs.query({}, (tabs) => {
     tabs.forEach((tab) => {
         const domain = new URL(tab.url).hostname;
-        if (isAllowedDomain(domain) || tab.url === "chrome://newtab/" || tab.url === "opera://startpage/") {
+        if (isAllowedDomain(domain) || tab.url === "chrome://newtab/" || tab.url === "opera://startpage/" || tab.url.startsWith("chrome://") || tab.url.startsWith("opera://")) {
             initialLoadTabs.add(tab.id);
             console.log(`Excluding already open tab: ${tab.id}`);
         }
