@@ -1,6 +1,6 @@
 # HiAnime Ad Blocker:
 
-# Zip file is locked until Admin of ( HiAnime ) to reach back for public release of source code of Ad Blocker.
+### Zip file is locked until Admin of ( HiAnime ) to reach back for public release of source code of Ad Blocker.
 
 ## This Ad Blocker basically auto detects redirect url links and auto closes tabs. 
 There are many pros & cons about this blocker as it's some what complix to get it
