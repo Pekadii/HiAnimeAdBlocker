@@ -4,7 +4,8 @@
 ![Version](https://img.shields.io/badge/version-1.6.9-brightgreen)
 > **Important**  
 Extension is helper for [HiAnime website](https://hianime.to).
-> ## Install
+
+## Install
 
 Install for:
 
