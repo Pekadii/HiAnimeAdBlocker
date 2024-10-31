@@ -2,6 +2,8 @@
 
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Version](https://img.shields.io/badge/version-1.6.9-brightgreen)
+> **Important**  
+Extension is helper for [HiAnime website](https://hianime.to).
 
 
 ## This Ad Blocker basically auto detects redirect url links and auto closes tabs. 
