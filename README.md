@@ -14,6 +14,10 @@ Description: The HiAnime Ad Blocker extension is designed specifically for enhan
 | <a href="https://www.google.com/chrome/"><img src="./logos/chrome.svg" width="42px" /><br /><span>Chrome</span></a> | <a href="https://www.microsoft.com/edge"><img src="./logos/edge.svg" width="42px" /><br /><span>Edge</span></a> | <a href="https://www.mozilla.org/firefox/"><img src="./logos/firefox.svg" width="42px" /><br /><span>Firefox</span></a> | <a href="https://www.opera.com/"><img src="./logos/opera.svg" width="42px" /><br /><span>Opera</span></a> |
 | ---- | ---- | ---- | ---- |
 
+## Errors
+> [!CAUTION]
+> Please notify of bugs you encounter or changes in the Ad Blocker.
+
 
 ## Goal
 
@@ -32,6 +36,27 @@ The goal is to watch HiAnime without unwanted ads or pop-ups.
 - URL Monitoring: Monitors page changes (hash change, popstate) and DOM mutations to detect and block ads dynamically.
   
 - Multi-Browser Compatibility: Primarily designed for Chrome, Opera, and other
+
+
+## Bug Fixes:
+
+- Fixed an issue where some tabs were closed incorrectly due to misidentification of allowed domains.
+  
+- Resolved a bug causing errors when detecting certain URL mutations.
+  
+- Fixed minor UI issues for console logging, making it easier to trace blocked tabs and allowed sites.
+  
+
+## Changelog:
+
+Version 1.6.9
+
+Changes:
+
+Added support for detecting dynamically loaded ads and closing them in real-time.
+Updated the allowed domains list to include popular sites (e.g., YouTube, Google, ChatGPT) for a smoother browsing experience.
+Improved efficiency of ad-blocking rules to better handle new ad domains.
+
 
 ## Screenshots
 
