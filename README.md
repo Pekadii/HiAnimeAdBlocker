@@ -10,9 +10,13 @@
 
 ## Install
 
-Supported browsers:
+## Supported Browsers
 
-![Chrome](https://example.com/chrome-icon.png) ![Edge](https://example.com/edge-icon.png) ![Firefox](https://example.com/firefox-icon.png) ![Opera](https://example.com/opera-icon.png)
+[![Chrome](images/chrome-icon.png)](https://www.google.com/chrome/) 
+[![Edge](images/edge-icon.png)](https://www.microsoft.com/edge) 
+[![Firefox](images/firefox-icon.png)](https://www.mozilla.org/firefox/) 
+[![Opera](images/opera-icon.png)](https://www.opera.com/) 
+
 
 - **Desktop**: Chrome, Edge, Opera, Brave
 - **Mobile**: Kiwi, Yandex, etc.
