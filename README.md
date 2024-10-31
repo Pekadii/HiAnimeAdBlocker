@@ -5,10 +5,9 @@
 > **Important**  
 Extension is helper for [HiAnime website](https://hianime.to).
 
+## HiAnime Ad Blocker
+This Ad Blocker auto detects redirect URL links and auto closes tabs.
 
-## This Ad Blocker basically auto detects redirect url links and auto closes tabs. 
-There are many pros & cons about this blocker as it's some what complix to get it
-working properly as I wanted to.
 
 # Goal:
 
