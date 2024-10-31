@@ -66,12 +66,12 @@ Improved efficiency of ad-blocking rules to better handle new ad domains.
    ```bash
    git clone https://github.com/Pekadii/HiAnimeAdBlocker.git
 
-Step 2: Load as an Unpacked Extension
+## Step 2: Load as an Unpacked Extension
 1. Open Chrome (or Opera) and navigate to chrome://extensions/ or opera://extensions/.
 2. Enable Developer mode by toggling the switch in the top right corner.
 3. Click Load unpacked and select the directory where you downloaded this extension.
 
-Step 3: Grant Permissions
+## Step 3: Grant Permissions
 3. Upon loading, you may need to grant the requested permissions to ensure proper ad-blocking functionality across domains.
 
 ### Usage Notes
