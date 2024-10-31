@@ -2,8 +2,11 @@
 
 # HiAnime Ad Blocker
 
-> **Important**  
-> This Ad Blocker auto-detects redirect URL links and auto-closes tabs.
+<div style="background-color: #f9ebea; padding: 10px; border-radius: 5px; color: #b03a2e;">
+    <strong>Important</strong><br>
+    This Ad Blocker auto-detects redirect URL links and auto-closes tabs.
+</div>
+
 
 ## Install
 
