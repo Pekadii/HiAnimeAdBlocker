@@ -19,7 +19,7 @@ Description: The HiAnime Ad Blocker extension is designed specifically for enhan
 
 The goal is to watch HiAnime without unwanted ads or pop-ups.
 
-#$ Features:
+## Features:
 
 - Auto Tab Closing: Detects and closes redirect pop-up tabs to prevent interruptions.
   
