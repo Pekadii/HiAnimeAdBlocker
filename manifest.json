@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "HiAnime Ad Blocker",
+  "version": "1.7.0",
+  "description": "Ad blocker auto closes redirect link pop-ups. by Pekadi",
+  "permissions": [
+    "declarativeNetRequest",
+    "tabs",
+    "alarms",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
