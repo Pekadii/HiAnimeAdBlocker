@@ -8,9 +8,7 @@
 </div>
 
 
-## Install
-
-## Supported Browsers
+# Install
 
 [![Chrome](logos/chrome.svg)](https://www.google.com/chrome/) 
 [![Edge](logos/edge.svg)](https://www.microsoft.com/edge) 
