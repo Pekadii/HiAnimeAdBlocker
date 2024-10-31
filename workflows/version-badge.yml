@@ -1,0 +1,35 @@
+name: Generate Version Badge
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create-badge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Get version from manifest.json
+        id: version
+        run: |
+          VERSION=$(jq -r '.version' manifest.json)
+          echo "::set-output name=VERSION::$VERSION"
+
+      - name: Generate badge
+        run: |
+          echo "Generating version badge..."
+          VERSION=${{ steps.version.outputs.VERSION }}
+          curl -o version-badge.svg "https://img.shields.io/badge/Version-${VERSION}-blue.svg"
+
+      - name: Commit and push badge
+        run: |
+          git config --local user.name "GitHub Action"
+          git config --local user.email "action@github.com"
+          git add version-badge.svg
+          git commit -m "Update version badge to ${VERSION}"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
