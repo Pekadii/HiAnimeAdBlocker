@@ -62,5 +62,6 @@ Improved efficiency of ad-blocking rules to better handle new ad domains.
 ## Screenshots
 
 ![Ad Blocker Screenshot](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/HiAnime.png)
-![Ad Blocker Screenshot](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/Thumbnail.png)
 ![Ad Blocker Screenshot](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/HiAnime-Home.png)
+![Ad Blocker Screenshot](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/Thumbnail.png)
+
