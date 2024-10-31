@@ -6,13 +6,15 @@
 
 The HiAnime Ad Blocker extension is designed specifically for enhancing the browsing experience on HiAnime and similar streaming sites. It automatically detects and blocks redirect links, closes unwanted tabs, and hides intrusive ads to provide a smoother, distraction-free viewing experience.
 
-> [!NOTE]
+> [!IMPORTANT]
 >
 > Not Official Release a pass key is required due to ( HiAnime Ad Blocker v1.6.9 was submitted. Awaiting moderation. )
 
-> [!IMPORTANT]
-> 
+
+> [!NOTE]
+>
 > This Ad Blocker auto-detects redirect URL links and auto-closes tabs.
+
 
 
 # Browser Support
