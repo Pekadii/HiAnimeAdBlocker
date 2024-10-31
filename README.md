@@ -13,9 +13,9 @@
 ## Supported Browsers
 
 [![Chrome](logos/chrome.svg)](https://www.google.com/chrome/) 
-[![Edge](images/edge-icon.png)](https://www.microsoft.com/edge) 
-[![Firefox](images/firefox-icon.png)](https://www.mozilla.org/firefox/) 
-[![Opera](images/opera-icon.png)](https://www.opera.com/) 
+[![Edge](logos/edge.svg)](https://www.microsoft.com/edge) 
+[![Firefox](logos/firefox.svg)](https://www.mozilla.org/firefox/) 
+[![Opera](logos/opera.svg)](https://www.opera.com/) 
 
 
 - **Desktop**: Chrome, Edge, Opera, Brave
