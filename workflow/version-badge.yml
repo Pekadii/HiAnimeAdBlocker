@@ -1,0 +1,28 @@
+name: Update Version Badge
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate-badge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Extract version from manifest.json
+        id: version
+        run: |
+          VERSION=$(jq -r '.version' manifest.json)
+          echo "::set-output name=VERSION::$VERSION"
+
+      - name: Generate version badge
+        uses: ams0/github-badge-action@v1.2.0
+        with:
+          label: "Development"
+          message: ${{ steps.version.outputs.VERSION }}
+          color: blue
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
