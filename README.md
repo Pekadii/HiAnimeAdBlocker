@@ -10,8 +10,9 @@
 
 ## Install
 
-| <a href="./install-on-chrome.md"><img src="./logos/chrome.svg" width="42px" /><br /><span>Chrome</span></a> | <a href="https://microsoftedge.microsoft.com/addons/detail/endghpbficnpbadbdalhbpecpgdcojig"><img src="./logos/edge.svg" width="42px" /><br /><span>Edge</span></a> | <a href="https://addons.mozilla.org/vi/firefox/addon/animevsub-helper/"><img src="./logos/firefox.svg" width="42px" /><br /><span>Firefox</span></a> | <a href="./install-on-chrome.md"><img src="./logos/opera.svg" width="42px" /><br /><span>Opera</span></a> |
+| <img src="./logos/chrome.svg" width="42px" /><br /><span>Chrome</span> | <img src="./logos/edge.svg" width="42px" /><br /><span>Edge</span> | <img src="./logos/firefox.svg" width="42px" /><br /><span>Firefox</span> | <img src="./logos/opera.svg" width="42px" /><br /><span>Opera</span> |
 | ---- | ---- | ---- | ---- |
+
 
 
 # Browser Support
