@@ -19,7 +19,7 @@ Install for:
 This Ad Blocker auto detects redirect URL links and auto closes tabs.
 
 
-# Goal:
+## Goal:
 
 ## The goal is to be able to watch HiAnime without unknown links or unwanted links pop-ups.
 Everyone can agree it's annyoing. As I keep updating the background.js
