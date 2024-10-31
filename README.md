@@ -1,5 +1,9 @@
 # HiAnime Ad Blocker:
 
+![License](https://img.shields.io/badge/license-MIT-green)
+![Version](https://img.shields.io/badge/version-1.0.0-brightgreen)
+
+
 ## This Ad Blocker basically auto detects redirect url links and auto closes tabs. 
 There are many pros & cons about this blocker as it's some what complix to get it
 working properly as I wanted to.
