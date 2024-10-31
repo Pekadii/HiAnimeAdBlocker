@@ -17,7 +17,7 @@ The HiAnime Ad Blocker extension is designed specifically for enhancing the brow
 
 ## Errors
 > [!CAUTION]
-> Please notify of bugs you encounter or changes in the Ad Blocker.
+> Please notify of bugs you encounter or like changes in the Ad Blocker.
 
 
 ## Goal
