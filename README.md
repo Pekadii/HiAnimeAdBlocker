@@ -1,8 +1,5 @@
 ![License](https://img.shields.io/badge/License-MIT-green) ![Release](https://img.shields.io/badge/Release-1.7.0-brightgreen) ![Development](https://img.shields.io/badge/Development-1.7.0-blue.svg)
-
-
-
-
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/87b1ee30946041c99c1a29daa9854b8d)](https://app.codacy.com/gh/Pekadii/HiAnimeAdBlocker/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 
 # 🌸 HiAnime Ad Blocker
