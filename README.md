@@ -82,7 +82,7 @@ Domains that are permitted by default include:
 - github.com
 - Google and YouTube pages
 
-Editing the Allowed Domains
+### Editing the Allowed Domains
 To customize the list of allowed domains:
 
 Open background.js.
