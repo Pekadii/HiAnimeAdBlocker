@@ -71,6 +71,24 @@ Step 2: Load as an Unpacked Extension
 2. Enable Developer mode by toggling the switch in the top right corner.
 3. Click Load unpacked and select the directory where you downloaded this extension.
 
+Step 3: Grant Permissions
+3. Upon loading, you may need to grant the requested permissions to ensure proper ad-blocking functionality across domains.
+
+Usage Notes
+This extension works specifically on HiAnime and a few other domains.
+Domains that are permitted by default include:
+- hianime.to
+- discord.com
+- github.com
+- Google and YouTube pages
+
+Editing the Allowed Domains
+To customize the list of allowed domains:
+
+Open background.js.
+Modify the allowedDomains array to include or exclude domains as desired.
+
+
 ![Logo](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/logo.png)
 
 ## Screenshots
