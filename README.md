@@ -74,7 +74,7 @@ Step 2: Load as an Unpacked Extension
 Step 3: Grant Permissions
 3. Upon loading, you may need to grant the requested permissions to ensure proper ad-blocking functionality across domains.
 
-Usage Notes
+### Usage Notes
 This extension works specifically on HiAnime and a few other domains.
 Domains that are permitted by default include:
 - hianime.to
