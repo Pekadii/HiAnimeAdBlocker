@@ -1,4 +1,4 @@
-![License](https://img.shields.io/badge/license-MIT-green) ![Version](https://img.shields.io/badge/release-1.7.0-brightgreen) /> <img src="https://img.shields.io/github/package-json/v/anime-vsub/desktop-web/release?label=release&color=b" />
+![License](https://img.shields.io/badge/license-MIT-green) ![Version](https://img.shields.io/badge/release-1.7.0-brightgreen) <img src="https://img.shields.io/github/package-json/v/anime-vsub/desktop-web/release?label=release&color=b" />
 
 # 🌸 HiAnime Ad Blocker
 
