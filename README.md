@@ -88,6 +88,7 @@ To customize the list of allowed domains:
 Open background.js.
 Modify the allowedDomains array to include or exclude domains as desired.
 
+![Domain](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/Domains.png)
 
 ![Logo](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/logo.png)
 
