@@ -64,7 +64,7 @@ Improved efficiency of ad-blocking rules to better handle new ad domains.
 ### Step 1: Download the Repository
 1. Clone or download the repository from GitHub to your local machine.
    ```bash
-   git clone https://github.com/your-username/HiAnime-Ad-Blocker.git
+   git clone https://github.com/Pekadii/HiAnimeAdBlocker.git
 
 ![Logo](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/logo.png)
 
