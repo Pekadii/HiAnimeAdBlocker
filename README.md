@@ -1,4 +1,4 @@
-![License](https://img.shields.io/badge/license-MIT-green) ![Version](https://img.shields.io/badge/release-1.7.0-brightgreen) <img alt="GitHub Background.json Version" src="https://github.com/Pekadii/HiAnimeAdBlocker.git=development" />
+![License](https://img.shields.io/badge/license-MIT-green) ![Version](https://img.shields.io/badge/release-1.7.0-brightgreen) 
 
 # 🌸 HiAnime Ad Blocker
 
