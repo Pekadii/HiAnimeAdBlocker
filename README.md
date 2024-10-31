@@ -10,8 +10,9 @@
 
 ## Install
 
-| <img src="./logos/chrome.svg" width="42px" /><br /><span>Chrome</span> | <img src="./logos/edge.svg" width="42px" /><br /><span>Edge</span> | <img src="./logos/firefox.svg" width="42px" /><br /><span>Firefox</span> | <img src="./logos/opera.svg" width="42px" /><br /><span>Opera</span> |
+| <a href="https://www.google.com/chrome/"><img src="./logos/chrome.svg" width="42px" /><br /><span>Chrome</span></a> | <a href="https://www.microsoft.com/edge"><img src="./logos/edge.svg" width="42px" /><br /><span>Edge</span></a> | <a href="https://www.mozilla.org/firefox/"><img src="./logos/firefox.svg" width="42px" /><br /><span>Firefox</span></a> | <a href="https://www.opera.com/"><img src="./logos/opera.svg" width="42px" /><br /><span>Opera</span></a> |
 | ---- | ---- | ---- | ---- |
+
 
 
 
