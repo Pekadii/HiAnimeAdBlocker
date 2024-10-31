@@ -1,6 +1,6 @@
 ![License](https://img.shields.io/badge/license-MIT-green) ![Version](https://img.shields.io/badge/version-1.6.9-brightgreen)
 
-<h1 style="color:#ffbade;">HiAnime Ad Blocker</h1>
+<span style="color:#ffbade; font-size: 2em; font-weight: bold;">HiAnime Ad Blocker</span>
 
 ![Banner](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/Banner.png)
 
