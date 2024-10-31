@@ -12,7 +12,7 @@
 
 ## Supported Browsers
 
-[![Chrome](images/chrome-icon.png)](https://www.google.com/chrome/) 
+[![Chrome](logos/chrome.svg)](https://www.google.com/chrome/) 
 [![Edge](images/edge-icon.png)](https://www.microsoft.com/edge) 
 [![Firefox](images/firefox-icon.png)](https://www.mozilla.org/firefox/) 
 [![Opera](images/opera-icon.png)](https://www.opera.com/) 
