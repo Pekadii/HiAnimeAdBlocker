@@ -55,7 +55,7 @@ Version 1.6.9
 Changes:
 
 Added support for detecting dynamically loaded ads and closing them in real-time.
-Updated the allowed domains list to include popular sites (e.g., YouTube, Google, ChatGPT) for a smoother browsing experience.
+Updated the allowed domains list to include popular sites (e.g., YouTube, Google, Discord,) for a smoother browsing experience.
 Improved efficiency of ad-blocking rules to better handle new ad domains.
 
 
