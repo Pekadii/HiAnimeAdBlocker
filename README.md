@@ -25,4 +25,4 @@ The goal is to watch HiAnime without unwanted ads or pop-ups.
 
 ## Screenshots
 
-![Ad Blocker Screenshot](https://github.com/username/repo/blob/main/screenshots/adblocker.png)
+![Ad Blocker Screenshot](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Thumbnail.png)
