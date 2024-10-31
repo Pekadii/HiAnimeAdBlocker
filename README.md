@@ -16,7 +16,7 @@
 
 
 # Browser Support
-- Desktop - Chrome, Edge, Opera, Firefox...
+- Desktop - Chrome, Edge, Firefox , Opera....
 
 
 ## Goal
