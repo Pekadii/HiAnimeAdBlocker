@@ -1,7 +1,6 @@
 ![License](https://img.shields.io/badge/license-MIT-green) ![Version](https://img.shields.io/badge/version-1.6.9-brightgreen)
 
 # Ad Blocker
-![Logo](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/logo.png)
 ![Banner](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/Banner.png)
 
 The HiAnime Ad Blocker extension is designed specifically for enhancing the browsing experience on HiAnime and similar streaming sites. It automatically detects and blocks redirect links, closes unwanted tabs, and hides intrusive ads to provide a smoother, distraction-free viewing experience.
@@ -61,6 +60,7 @@ Added support for detecting dynamically loaded ads and closing them in real-time
 Updated the allowed domains list to include popular sites (e.g., YouTube, Google, Discord,) for a smoother browsing experience.
 Improved efficiency of ad-blocking rules to better handle new ad domains.
 
+![Logo](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/logo.png)
 
 ## Screenshots
 
