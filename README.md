@@ -61,6 +61,11 @@ Added support for detecting dynamically loaded ads and closing them in real-time
 Updated the allowed domains list to include popular sites (e.g., YouTube, Google, Discord,) for a smoother browsing experience.
 Improved efficiency of ad-blocking rules to better handle new ad domains.
 
+### Step 1: Download the Repository
+1. Clone or download the repository from GitHub to your local machine.
+   ```bash
+   git clone https://github.com/your-username/HiAnime-Ad-Blocker.git
+
 ![Logo](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/logo.png)
 
 ## Screenshots
