@@ -16,7 +16,6 @@
 Install for
 - [Desktop](./xtension-animevsub-helper/blob/main/install-on-chrome.md#desktop-install-extension-for-chromium-chrome-opera-brave-avas-) - Chrome, Edge, Vilvadi, Firefox...
 
-- **Desktop**: Chrome, Edge, Opera, Brave
 
 ## Goal
 
