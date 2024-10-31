@@ -19,7 +19,6 @@
 
 
 - **Desktop**: Chrome, Edge, Opera, Brave
-- **Mobile**: Kiwi, Yandex, etc.
 
 ## Goal
 
