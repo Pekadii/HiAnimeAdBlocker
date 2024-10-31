@@ -80,7 +80,7 @@ Domains that are permitted by default include:
 - hianime.to
 - discord.com
 - github.com
-- addons.opera.com and YouTube pages
+- addons and YouTube pages
 
 ### Editing the Allowed Domains
 To customize the list of allowed domains:
