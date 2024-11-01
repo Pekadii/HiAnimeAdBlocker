@@ -103,5 +103,5 @@ Modify the allowedDomains array to include or exclude domains as desired.
 
 ![Ad Blocker Screenshot](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/HiAnime.png)
 ![Ad Blocker Screenshot](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/HiAnime-Home.png)
-![Ad Blocker Screenshot](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/Thumbnail.png)
+
 
