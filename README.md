@@ -52,7 +52,6 @@ The goal is to watch HiAnime without unwanted ads or pop-ups.
 ## Bug Fixes:
 
 - Fix service worker (inactive) error, only when developer mode is active in "extension" to see the error.
-- 
 - Fix "Allowed domains list" comes with default domains cause of the "service worker (inactive) error".
 
 
@@ -62,7 +61,7 @@ Version 1.7.0
 
 Changes:
 
-Feature Enhancements
+- Feature Enhancements
 
 ## Step 1: Download the Repository
 1. Clone or download the repository from GitHub to your local machine.
