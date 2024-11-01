@@ -60,7 +60,7 @@ The goal is to watch HiAnime without unwanted ads or pop-ups.
 
 ## Changelog:
 
-Version 1.6.9
+Version 1.7.0
 
 Changes:
 
