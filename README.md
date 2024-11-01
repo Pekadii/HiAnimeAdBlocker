@@ -51,12 +51,10 @@ The goal is to watch HiAnime without unwanted ads or pop-ups.
 
 ## Bug Fixes:
 
-- Fixed an issue where some tabs were closed incorrectly due to misidentification of allowed domains.
-  
-- Resolved a bug causing errors when detecting certain URL mutations.
-  
-- Fixed minor UI issues for console logging, making it easier to trace blocked tabs and allowed sites.
-  
+- Fix service worker (inactive) error, only when developer mode is active in "extension" to see the error.
+- 
+- Fix "Allowed domains list" comes with default domains cause of the "service worker (inactive) error".
+
 
 ## Changelog:
 
@@ -64,9 +62,7 @@ Version 1.7.0
 
 Changes:
 
-Added support for detecting dynamically loaded ads and closing them in real-time.
-Updated the allowed domains list to include popular sites (e.g., YouTube, Google, Discord,) for a smoother browsing experience.
-Improved efficiency of ad-blocking rules to better handle new ad domains.
+Feature Enhancements
 
 ## Step 1: Download the Repository
 1. Clone or download the repository from GitHub to your local machine.
