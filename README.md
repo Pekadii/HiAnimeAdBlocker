@@ -9,8 +9,7 @@ The HiAnime Ad Blocker extension is designed specifically for enhancing the brow
 
 > [!IMPORTANT]
 >
-> Not Official Release a pass key is required due to ( HiAnime Ad Blocker v1.6.9 was submitted. Awaiting moderation. )
-
+> # Not Official Release a ( KEY ) is required.
 
 > [!NOTE]
 >
