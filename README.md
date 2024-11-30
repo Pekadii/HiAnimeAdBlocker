@@ -10,6 +10,8 @@ The HiAnime Ad Blocker extension is designed specifically for enhancing the brow
 > [!IMPORTANT]
 >
 > # Not Official Release a ( KEY ) is required.
+> # [Discord](https://Pekadi.com) DM me for key!
+> ## Please check "Releases" for updated changes / bug fixes & improvments!
 
 > [!NOTE]
 >
@@ -28,39 +30,6 @@ The HiAnime Ad Blocker extension is designed specifically for enhancing the brow
 > [!CAUTION]
 > Please notify of bugs you encounter or like changes in the Ad Blocker.
 
-
-## Goal
-
-The goal is to watch HiAnime without unwanted ads or pop-ups.
-
-## Features:
-
-- Auto Tab Closing: Detects and closes redirect pop-up tabs to prevent interruptions.
-  
-- Customizable Allowed Domains: Maintains a list of allowed domains (e.g., discord.com, github.com) to prevent unnecessary blocking on trusted sites.
-  
-- Ad Blocking Rules: Blocks various ad resources (scripts, images, etc.) from known ad domains, enhancing load times and privacy.
-  
-- Hide Pop-ups and Overlays: Conceals overlays, modals, and banners commonly used for ads.
-  
-- URL Monitoring: Monitors page changes (hash change, popstate) and DOM mutations to detect and block ads dynamically.
-  
-- Multi-Browser Compatibility: Primarily designed for Chrome, Opera, and other
-
-
-## Bug Fixes:
-
-- Fix service worker (inactive) error, only when developer mode is active in "extension" to see the error.
-- Fix "Allowed domains list" comes with default domains cause of the "service worker (inactive) error".
-
-
-## Changelog:
-
-Version 1.7.0
-
-Changes:
-
-- Feature Enhancements
 
 ## Step 1: Download the Repository
 1. Clone or download the repository from GitHub to your local machine.
