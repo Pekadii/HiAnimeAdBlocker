@@ -51,6 +51,7 @@ Domains that are permitted by default include:
 - discord.com
 - github.com
 - addons and YouTube pages
+- myanimelist
 
 ### Editing the Allowed Domains
 To customize the list of allowed domains:
