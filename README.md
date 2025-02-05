@@ -9,7 +9,7 @@ The HiAnime Ad Blocker extension is designed specifically for enhancing the brow
 
 > [!IMPORTANT]
 >
-> # Not Official Release a ( KEY ) is required.
+> # Official Release a ( KEY ) is required.
 > # [Discord](https://Pekadi.com) DM me for key!
 > ## Please check "Releases" for updated changes / bug fixes & improvments!
 
