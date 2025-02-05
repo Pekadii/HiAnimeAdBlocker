@@ -68,3 +68,6 @@ Modify the allowedDomains array to include or exclude domains as desired.
 ![Ad Blocker Screenshot](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/HiAnime-Home.png)
 
 
+
+## License
+This project is licensed under the [MIT License](LICENSE).
