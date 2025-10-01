@@ -1,4 +1,4 @@
-![License](https://img.shields.io/badge/License-MIT-blue) ![Release](https://img.shields.io/badge/Release-1.7.3-blue) ![Development](https://img.shields.io/badge/Development-1.7.3-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-blue) ![Release](https://img.shields.io/badge/Release-1.7.3-blue) ![Development](https://img.shields.io/badge/Development-1.7.4-blue.svg)
 
 
 # 🌸 HiAnime Ad Blocker
