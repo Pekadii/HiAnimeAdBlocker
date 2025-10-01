@@ -56,7 +56,7 @@ Domains that are permitted by default include:
 ### Editing the Allowed Domains
 To customize the list of allowed domains:
 
-Open background.js.
+Open background.min.js.
 Modify the allowedDomains array to include or exclude domains as desired.
 
 ![Domain](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/Domains.png)
