@@ -18,6 +18,11 @@ The HiAnime Ad Blocker extension is designed specifically for enhancing the brow
 > This Ad Blocker auto-detects redirect URL links and auto-closes tabs.
 
 
+> [!TIP]
+>
+> # [MyAnimeList](https://myanimelist.net)
+> ## Banners / Ads have been remove with new release of Ad Blocker!
+
 
 # Browser Support
 
