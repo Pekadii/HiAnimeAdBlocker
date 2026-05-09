@@ -66,7 +66,7 @@ Modify the allowedDomains array to include or exclude domains as desired.
 
 ![Domain](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/Domains.png)
 
-![Logo](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/logo.png)
+![Logo](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/aniwave.png)
 
 ## Screenshots
 
