@@ -28,7 +28,7 @@ It automatically detects redirect links, blocks intrusive advertisements, closes
 > [!TIP]
 >
 > ## Supported Enhancements
-> - MyAnimeList banner ads removed
+> - MyAnimeList banner ads removed, working progress.
 > - Redirect protection enabled
 > - Auto-close popup tabs
 > - Cleaner anime streaming experience
