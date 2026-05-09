@@ -3,7 +3,7 @@
 
 # 🌸 HiAnime has shutdown currently working on new ad blocker for different site
 
-![Banner](https://raw.githubusercontent.com/Pekadii/HiAnimeAdBlocker/main/Images/Banner.png)
+![Banner](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/bg-index-top1.png)
 
 The HiAnime Ad Blocker extension is designed specifically for enhancing the browsing experience on HiAnime and similar streaming sites. It automatically detects and blocks redirect links, closes unwanted tabs, and hides intrusive ads to provide a smoother, distraction-free viewing experience.
 
