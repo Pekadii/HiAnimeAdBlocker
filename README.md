@@ -70,7 +70,7 @@ Modify the allowedDomains array to include or exclude domains as desired.
 
 ## Screenshots
 
-![Ad Blocker Screenshot](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/AniWave-home.png)
+![Ad Blocker Screenshot](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/AniWave-Home.png)
 
 
 
