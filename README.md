@@ -1,7 +1,7 @@
 ![License](https://img.shields.io/badge/License-MIT-blue) ![Release](https://img.shields.io/badge/Release-2.0.0-blue) ![Development](https://img.shields.io/badge/Development-2.0.1-blue.svg)
 
 
-# 🌸 HiAnime has shutdown currently working on new ad blocker for different site
+# 🌸 Welcome to AniWave Ad Blocker, R.I.P Hianinme 💔
 
 ![Banner](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/bg-index-top1.png)
 
