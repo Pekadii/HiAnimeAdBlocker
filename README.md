@@ -52,9 +52,7 @@ It automatically detects redirect links, blocks intrusive advertisements, closes
 
 # 📦 Installation
 
-## Step 1 — Download the Repository
+## Step 1 — Download zip file 
+Check Releases
 
-Clone or download the repository from GitHub:
 
-```bash
-git clone https://github.com/Pekadii/AniWaveAdBlocker.git
