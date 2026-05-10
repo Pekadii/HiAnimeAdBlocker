@@ -2,7 +2,7 @@
 ![Release](https://img.shields.io/badge/Release-2.0.0-blue)
 ![Development](https://img.shields.io/badge/Development-2.0.1-blue.svg)
 
-# 🌸 Welcome to AniWave Ad Blocker
+# ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎![logo](https://github.com/Pekadii/AniWaveAdBlocker/blob/main/Images/aniwave.png)
 
 ![Banner](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/bg-index-top1.png)
 
