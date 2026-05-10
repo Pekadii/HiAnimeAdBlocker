@@ -6,32 +6,33 @@
 
 ![Banner](https://github.com/Pekadii/HiAnimeAdBlocker/blob/main/Images/bg-index-top1.png)
 
-AniWave Ad Blocker is a lightweight browser extension designed to enhance your streaming experience on AniWave and similar anime streaming sites.  
-It automatically detects redirect links, blocks intrusive advertisements, closes unwanted pop-up tabs, and helps create a cleaner, distraction-free browsing experience.
+### AniWaves Ad Blocker is an aggressive browser extension designed to reduce intrusive ads, redirect traps, pop-up tabs, invisible click shields, and overlay blockers on AniWaves.
+
+### It helps keep the watching experience cleaner by automatically closing unwanted ad tabs, blocking popup redirects, removing disruptive page overlays, and restoring page interaction when ads try to lock the player or page.
+
 
 ---
 
 > [!IMPORTANT]
->
-> # Official Release — A KEY is required
-> ## DM me on [Pekadi](https://pekadi.com) for access.
+> 
+> ### This extension uses aggressive blocking behavior to fight popup redirects and invisible click layers. Some video hosts may update their player behavior over time, so occasional compatibility fixes may be needed.
 > ### Please check the "Releases" tab for updates, bug fixes, and improvements.
 
 ---
 
 > [!NOTE]
 >
-> This Ad Blocker automatically detects redirect URLs and closes unwanted tabs in real time.
+> ### This Ad Blocker automatically detects redirect URLs and closes unwanted tabs in real time.
 
 ---
 
 > [!TIP]
 >
 > ## Supported Enhancements
-> - MyAnimeList banner ads removed, working progress.
-> - Redirect protection enabled
-> - Auto-close popup tabs
-> - Cleaner anime streaming experience
+> - ### MyAnimeList banner ads removed, working progress.
+> - ### Redirect protection enabled
+> - ### Auto-close popup tabs
+> - ### Cleaner anime streaming experience
 
 ---
 
@@ -46,13 +47,28 @@ It automatically detects redirect links, blocks intrusive advertisements, closes
 
 > [!CAUTION]
 >
-> Please report bugs, broken redirects, or requested changes for future updates.
+> ### Please report bugs, broken redirects, or requested changes for future updates.
 
 ---
 
 # 📦 Installation
 
-## Step 1 — Download zip file 
-Check Releases
+### Step 1 — Download zip file under releases
+![Releases](https://github.com/Pekadii/AniWaveAdBlocker/blob/main/Images/Releases.png)
+
+### Step 2 - Unzip file you should see this
+![Unzip](https://github.com/Pekadii/AniWaveAdBlocker/blob/main/Images/Unzip-folder.png)
+
+
+
+![Contents](https://github.com/Pekadii/AniWaveAdBlocker/blob/main/Images/Contents.png)
+
+### Step 3 - In Extensions activate Dev mode
+![Extension](https://github.com/Pekadii/AniWaveAdBlocker/blob/main/Images/Extension.png)
+
+
+
+### Step 4 - Load unpacked find where you unzip the ad blocker folder then turn on
+![Ad Blocker](https://github.com/Pekadii/AniWaveAdBlocker/blob/main/Images/Ad-Blocker.png)
 
 
